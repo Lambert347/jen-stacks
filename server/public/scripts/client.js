@@ -11,7 +11,7 @@ function onReady() {
 function addJoke(){
     let jokeObject = {
         whoseJoke: $('#whoseJokeIn').val(),
-        question: $('#questionIn').val(),
+        jokeQuestion: $('#questionIn').val(),
         punchLine: $('#punchlineIn').val(),
     }
     $.ajax({
@@ -45,6 +45,7 @@ function getJokes(){
                     <p>${joke.whoseJoke}</p>
                     <p>${joke.jokeQuestion}</p>
                     <p>${joke.punchLine}</p>
+                    </div>
                 `)
             }
         })

@@ -1,0 +1,18 @@
+body {
+    background-color: cadetblue;
+    margin: 5rem;
+}
+
+main {
+    background-color: gainsboro;
+    margin: auto;
+    border: 1px #dcdcdc;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.joke {
+    display: grid;
+    margin: 15px;
+    
+}

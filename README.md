@@ -28,8 +28,8 @@ To get started, fork this repo and clone it to your machine.
 
 Overview
 --------
-* when the app is loaded, all jokes should be displayed on the DOM below the inputs
-* the user should be able to add jokes using the input form
-* after a joke is added, the jokes displayed on the DOM should reflect the new data
+* when the app is loaded, all jokes should be displayed on the DOM below the inputs!!
+* the user should be able to add jokes using the input form!!
+* after a joke is added, the jokes displayed on the DOM should reflect the new data!!
 
 Remember to work in small increments and test often. If you want to take things further, first push the working basic mode to your github and update it after.

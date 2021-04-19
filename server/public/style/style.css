@@ -13,6 +13,10 @@ main {
 
 .joke {
     display: grid;
-    margin: 15px;
+    margin: 20px;
     
+}
+
+#whose {
+    font-weight: bold;
 }

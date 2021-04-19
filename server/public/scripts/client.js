@@ -42,7 +42,7 @@ function getJokes(){
             for (let joke of response){
                 $('#outputDiv').append(`
                     <div class="joke">
-                    <p>${joke.whoseJoke}</p>
+                    <p id="whose">${joke.whoseJoke}</p>
                     <p>${joke.jokeQuestion}</p>
                     <p>${joke.punchLine}</p>
                     </div>

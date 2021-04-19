@@ -23,3 +23,29 @@ function addJoke(){
         })
         //do .catch later
 }
+
+function getJokes(){
+    $.ajax({
+        method: 'GET',
+        url: '/jokes',
+    })
+        .then (function(response){
+            console.log('Response from the server', response);
+            $('#outputDiv').empty();
+            console.log('Adding jokes to the DOM');
+            for (let joke of response){
+                $('#outputDiv').append(`
+                    <div class="joke">
+                    <p>${joke.whoseJoke}</p>
+                    <p>${joke.jokeQuestion}</p>
+                    <p>${joke.punchline}</p>
+                `)
+            }
+        })
+}
+function clearInputs(){
+    $('#whoseJokeIn').val(''),
+    $('#questionIn').val(''),
+    $('#punchlineIn').val(''),
+
+}

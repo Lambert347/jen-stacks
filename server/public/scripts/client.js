@@ -21,7 +21,12 @@ function addJoke(){
         .then (function(resposne){
             getJokes();
         })
-        //do .catch later
+        .catch(function(error){
+            console.log('Error from server', error);
+            alert('Sorry, could not add joke, try again later');
+        })
+
+    clearInputs();
 }
 
 function getJokes(){
@@ -42,10 +47,13 @@ function getJokes(){
                 `)
             }
         })
+        .catch(function(error){
+            console.log('Error from server', error);
+            alert('Sorry, could not get joke book, try again later');
+        })
 }
 function clearInputs(){
-    $('#whoseJokeIn').val(''),
-    $('#questionIn').val(''),
-    $('#punchlineIn').val(''),
-
+    $('#whoseJokeIn').val('');
+    $('#questionIn').val('');
+    $('#punchlineIn').val('');
 }

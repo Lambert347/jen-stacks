@@ -5,6 +5,7 @@ $( document ).ready( onReady );
 function onReady() {
     console.log('DOM ready');
     $('#addJokeButton').on('click', addJoke);
+    getJokes();
 }
 
 function addJoke(){
@@ -43,7 +44,7 @@ function getJokes(){
                     <div class="joke">
                     <p>${joke.whoseJoke}</p>
                     <p>${joke.jokeQuestion}</p>
-                    <p>${joke.punchline}</p>
+                    <p>${joke.punchLine}</p>
                 `)
             }
         })
